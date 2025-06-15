@@ -1,4 +1,4 @@
-﻿# Industrial DRA Skid Monitoring System
+# Industrial DRA Skid Monitoring System
 
 **A comprehensive Python-based industrial monitoring system for a Drag Reducing Agent (DRA) injection skid using a multi-agent architecture, AI-powered analysis, and scalable cloud deployment on Google Cloud Platform (GCP).**
 
@@ -103,6 +103,7 @@ poetry run python industrial_dra_system/agents/process_control_agent.py
 
 # Run the Predictive Maintenance Agent
 poetry run python industrial_dra_system/agents/predictive_maintenance_agent.py
+
 # Run the IoT Data Ingestor
 poetry run python industrial_dra_system/iot_integration/sensor_data_ingestion.py
 ```
