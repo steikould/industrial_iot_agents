@@ -1,9 +1,14 @@
-# Industrial DRA Skid Monitoring System
+# DRA Injection Skid Digital Twin
 
-**A comprehensive Python-based industrial monitoring system for a Drag Reducing Agent (DRA) injection skid using a multi-agent architecture, AI-powered analysis, and scalable cloud deployment on Google Cloud Platform (GCP).**
+This project implements a digital twin for a DRA (Drag Reducing Agent) injection skid, focusing on optimizing pump energy costs while maintaining fuel quality standards. This initial phase targets a pilot location in Atlanta on a 5000-mile fuel pipeline, with the goal of eventual expansion to the full network.
 
-## Project Overview
-This system is an end-to-end solution for optimizing the performance, reliability, and efficiency of an industrial DRA injection skid. It uses a multi-agent architecture and is built on GCP.
+## Overview
+
+The system is designed to provide:
+- Semi-realtime monitoring of DRA injection skid parameters.
+- 7-day forward planning and optimization of DRA injection schedules.
+- Analytics based on historical (8 years) and real-time operational data.
+- Integration with GCP Cloud Analytics Platform, including Vertex AI and potentially Gemini AI models.
 
 ### Key Features
 - **Multi-Agent Architecture:** Three specialized AI agents (Process Control, Predictive Maintenance, Operational Intelligence) work in concert to manage the system.
@@ -30,74 +35,53 @@ This section describes the overall architecture of the Industrial DRA Skid Monit
     - **Storage:** Cloud Storage
     - **Observability:** Cloud Monitoring, Cloud Logging
 - **IoT Protocols:** MQTT, Modbus TCP/IP, OPC UA
+- 
+- `src/`: Contains the core Python source code.
+  - `models/`: Pydantic models defining the data structures for the system (`digital_twin_models.py`).
+  - `core/`: Core logic for data processing (e.g., `time_spine.py`, `energy_calculation.py`).
+  - `gcp_integration/`: Modules for interacting with Google Cloud Platform services (e.g., `optimization.py` for Vertex AI based optimization).
+  - `utils/`: Utility functions.
+- `tests/`: Unit and integration tests.
+- `docs/`: Project documentation, including system architecture diagrams (e.g., `system_architecture.svg`).
+- `config/`: Configuration files for the application.
 
-## Project Structure
-```
-industrial_dra_system/
-├── agents/
-│   ├── process_control_agent.py
-│   ├── predictive_maintenance_agent.py
-│   └── operational_intelligence_agent.py
-├── a2a_integration/
-│   ├── agent_communication.py
-│   └── message_routing.py
-├── google_ai/
-│   ├── rag_engine.py
-│   ├── document_processing.py
-│   └── knowledge_base.py
-├── iot_integration/
-│   ├── sensor_data_ingestion.py
-│   ├── data_validation.py
-│   └── real_time_processing.py
-├── gcp_deployment/
-│   ├── cloud_functions/
-│   ├── cloud_run/
-│   └── terraform_configs/
-├── monitoring/
-│   ├── alerting.py
-│   └── logging.py
-├── tests/
-└── pyproject.toml
-└── README.md
-```
+## Technical Specifications
 
-## Getting Started
-This section will guide you through setting up and running the project.
+Refer to the detailed technical specifications document (provided in the initial request) and the system architecture diagram (`docs/system_architecture.svg`) for a comprehensive understanding of the system components, data flows, and optimization strategies. The Pydantic models in `src/models/digital_twin_models.py` are derived directly from these specifications.
 
-### Prerequisites
-- Python 3.9 or higher
-- Poetry for dependency management (https://python-poetry.org/docs/#installation)
-- A Google Cloud Platform (GCP) project with billing enabled
-- Google Cloud SDK (`gcloud` CLI) installed and authenticated (https://cloud.google.com/sdk/docs/install)
+## Setup and Installation
 
-### Installation
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/industrial_dra_system.git
-   cd industrial_dra_system
-   ```
-2. **Set up GCP authentication:**
-   ```bash
-   gcloud auth application-default login
-   gcloud config set project YOUR_PROJECT_ID
-   ```
-3. **Install dependencies:**
-   ```bash
-   poetry install
-   ```
-4. **Configure Environment Variables:**
-   Create a `.env` file in the root of the project. This file will store your environment-specific configurations. Example:
-   ```env
-   GCP_PROJECT_ID="your-gcp-project-id"
-   PUBSUB_TOPIC_NAME="dra-system-events"
-   DB_USER="your-db-user"
-   DB_PASSWORD="your-db-password"
-   # Add other necessary environment variables
-   ```
+(Details on setting up the environment, installing dependencies like Pydantic, and configuring GCP credentials will be added here.)
 
-### Running the Agents
-To run the agents and other components:
-```bash
+## Usage
+
+(Instructions on how to run specific modules, trigger optimization tasks, or interact with potential APIs will be detailed here.)
+
+Example of running a placeholder module:
+
+## Phases
+
+- **Phase 1: Monitoring & Analytics (Current Focus)**
+  - ✅ MQTT sensor integration (conceptualized in models)
+  - ✅ Time spine generation and data processing (placeholder in `src/core/time_spine.py`)
+  - ✅ Historical data analysis and modeling (models defined, implementation pending)
+  - ✅ Semi-realtime optimization engine (placeholder in `src/gcp_integration/optimization.py`)
+  - ✅ 7-day forward planning capability (placeholder in `src/gcp_integration/optimization.py`)
+  - ✅ Operations dashboard and analytics (models defined, UI implementation pending)
+- **Phase 2: Bidirectional Control (Future)**
+- **Phase 3: Full Pipeline Digital Twin (Future)**
+
+## Technology Stack (Key Components)
+
+- **Language**: Python 3.9+
+- **Core Data Models**: Pydantic
+- **Cloud Platform**: Google Cloud Platform (GCP)
+- **ML Platform**: Vertex AI
+- **Data Warehouse**: BigQuery
+- **Streaming**: Pub/Sub + Apache Beam (conceptual)
+- **Communication (Physical Layer)**: MQTT over SCADA (conceptual)
+
+(A full list of Python libraries is outlined in the technical specifications and will be formalized in `requirements.txt`.)
 # Run the Process Control Agent
 poetry run python industrial_dra_system/agents/process_control_agent.py
 
@@ -106,4 +90,4 @@ poetry run python industrial_dra_system/agents/predictive_maintenance_agent.py
 
 # Run the IoT Data Ingestor
 poetry run python industrial_dra_system/iot_integration/sensor_data_ingestion.py
-```
+
