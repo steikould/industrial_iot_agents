@@ -1,0 +1,417 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1a73e8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4285f4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="physicalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#34a853;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#34a853;stop-opacity:0.1" />
+    </linearGradient>
+    <linearGradient id="dataGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ea4335;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#ea4335;stop-opacity:0.1" />
+    </linearGradient>
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbc04;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#fbbc04;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="#f8f9fa"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="1200" height="60" fill="url(#headerGrad)"/>
+  <text x="600" y="35" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="20" font-weight="bold">
+    DRA Injection Skid Digital Twin - Atlanta Pilot (5000-Mile Pipeline)
+  </text>
+
+  <!-- Physical Layer -->
+  <rect x="20" y="80" width="280" height="680" fill="url(#physicalGrad)" stroke="#34a853" stroke-width="2" rx="10"/>
+  <text x="160" y="105" text-anchor="middle" fill="#34a853" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+    PHYSICAL LAYER - ATLANTA
+  </text>
+
+  <!-- Pipeline -->
+  <rect x="40" y="120" width="240" height="40" fill="#666" stroke="#333" stroke-width="2" rx="5"/>
+  <text x="160" y="143" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    5000-Mile Fuel Pipeline
+  </text>
+
+  <!-- DRA Injection Skid -->
+  <rect x="40" y="180" width="240" height="200" fill="#e8f0fe" stroke="#1a73e8" stroke-width="2" rx="5"/>
+  <text x="160" y="200" text-anchor="middle" fill="#1a73e8" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    DRA Injection Skid
+  </text>
+
+  <!-- Primary Pump -->
+  <circle cx="100" cy="240" r="25" fill="#4285f4" stroke="#1a73e8" stroke-width="2"/>
+  <text x="100" y="245" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">
+    PUMP 1
+  </text>
+  <text x="100" y="275" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="9">
+    Primary
+  </text>
+
+  <!-- Backup Pump -->
+  <circle cx="180" cy="240" r="25" fill="#9aa0a6" stroke="#5f6368" stroke-width="2"/>
+  <text x="180" y="245" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">
+    PUMP 2
+  </text>
+  <text x="180" y="275" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="9">
+    Backup
+  </text>
+
+  <!-- Injection Unit -->
+  <rect x="70" y="300" width="120" height="30" fill="#fbbc04" stroke="#f9ab00" stroke-width="2" rx="3"/>
+  <text x="130" y="318" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">
+    Injection Unit
+  </text>
+
+  <!-- Interface -->
+  <rect x="70" y="340" width="120" height="25" fill="#9334e6" stroke="#7c3aed" stroke-width="2" rx="3"/>
+  <text x="130" y="355" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">
+    HMI Interface
+  </text>
+
+  <!-- Sensors -->
+  <rect x="40" y="400" width="240" height="120" fill="#f1f3f4" stroke="#5f6368" stroke-width="1" rx="3"/>
+  <text x="160" y="420" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="11" font-weight="bold">
+    SENSORS (Report by Exception)
+  </text>
+
+  <!-- Entry Flow Sensor -->
+  <circle cx="80" cy="450" r="15" fill="#34a853"/>
+  <text x="80" y="455" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">
+    F1
+  </text>
+  <text x="80" y="475" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="8">
+    Entry Flow
+  </text>
+
+  <!-- Exit Flow Sensor -->
+  <circle cx="120" cy="450" r="15" fill="#34a853"/>
+  <text x="120" y="455" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">
+    F2
+  </text>
+  <text x="120" y="475" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="8">
+    Exit Flow
+  </text>
+
+  <!-- Pump Status Sensor -->
+  <circle cx="160" cy="450" r="15" fill="#ea4335"/>
+  <text x="160" y="455" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">
+    S1
+  </text>
+  <text x="160" y="475" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="8">
+    Pump Status
+  </text>
+
+  <!-- Pressure Sensor -->
+  <circle cx="200" cy="450" r="15" fill="#ff6d01"/>
+  <text x="200" y="455" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="8" font-weight="bold">
+    P1
+  </text>
+  <text x="200" y="475" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="8">
+    Pressure
+  </text>
+
+  <!-- MQTT Connection -->
+  <rect x="60" y="540" width="200" height="30" fill="#333" stroke="#666" stroke-width="1" rx="3"/>
+  <text x="160" y="558" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="10" font-weight="bold">
+    MQTT SCADA Connection
+  </text>
+
+  <!-- Lab Quality Testing -->
+  <rect x="40" y="590" width="240" height="50" fill="#e8eaed" stroke="#5f6368" stroke-width="1" rx="3"/>
+  <text x="160" y="610" text-anchor="middle" fill="#333" font-family="Arial, sans-serif" font-size="11" font-weight="bold">
+    Downstream Lab Quality Testing
+  </text>
+  <text x="160" y="625" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    DRA Concentration % Analysis
+  </text>
+
+  <!-- Data Processing Layer -->
+  <rect x="320" y="80" width="280" height="680" fill="url(#dataGrad)" stroke="#ea4335" stroke-width="2" rx="10"/>
+  <text x="460" y="105" text-anchor="middle" fill="#ea4335" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+    DATA PROCESSING LAYER
+  </text>
+
+  <!-- Time Spine Generation -->
+  <rect x="340" y="130" width="240" height="80" fill="#fce8e6" stroke="#ea4335" stroke-width="1" rx="5"/>
+  <text x="460" y="150" text-anchor="middle" fill="#ea4335" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    Time Spine Generation
+  </text>
+  <text x="460" y="165" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Exception → Minute-level Data
+  </text>
+  <text x="460" y="180" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Last Value Carry Forward
+  </text>
+  <text x="460" y="195" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Interpolation for Missing Values
+  </text>
+
+  <!-- Historical Data Store -->
+  <rect x="340" y="230" width="240" height="60" fill="#fce8e6" stroke="#ea4335" stroke-width="1" rx="5"/>
+  <text x="460" y="250" text-anchor="middle" fill="#ea4335" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    Historical Data Store
+  </text>
+  <text x="460" y="265" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    8 Years of Sensor Data
+  </text>
+  <text x="460" y="280" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Energy Usage Patterns
+  </text>
+
+  <!-- Energy Cost Calculation -->
+  <rect x="340" y="310" width="240" height="80" fill="#fce8e6" stroke="#ea4335" stroke-width="1" rx="5"/>
+  <text x="460" y="330" text-anchor="middle" fill="#ea4335" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    Energy Cost Calculation
+  </text>
+  <text x="460" y="345" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Pump Efficiency × Flowrate × Pressure
+  </text>
+  <text x="460" y="360" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Static kW Cost (→ Variable Pricing)
+  </text>
+  <text x="460" y="375" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Minute-level Cost Interpolation
+  </text>
+
+  <!-- Data Validation -->
+  <rect x="340" y="410" width="240" height="60" fill="#fce8e6" stroke="#ea4335" stroke-width="1" rx="5"/>
+  <text x="460" y="430" text-anchor="middle" fill="#ea4335" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    Data Quality & Validation
+  </text>
+  <text x="460" y="445" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    DRA Concentration Monitoring
+  </text>
+  <text x="460" y="460" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Quality Standard Compliance
+  </text>
+
+  <!-- Feature Engineering -->
+  <rect x="340" y="490" width="240" height="80" fill="#fce8e6" stroke="#ea4335" stroke-width="1" rx="5"/>
+  <text x="460" y="510" text-anchor="middle" fill="#ea4335" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    Feature Engineering
+  </text>
+  <text x="460" y="525" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Pump Performance Metrics
+  </text>
+  <text x="460" y="540" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Flow Differential Analysis
+  </text>
+  <text x="460" y="555" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Covariate Testing Framework
+  </text>
+
+  <!-- Python ETL Pipeline -->
+  <rect x="340" y="590" width="240" height="50" fill="#333" stroke="#666" stroke-width="1" rx="3"/>
+  <text x="460" y="610" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="11" font-weight="bold">
+    Python ETL Pipeline
+  </text>
+  <text x="460" y="625" text-anchor="middle" fill="#ccc" font-family="Arial, sans-serif" font-size="9">
+    Pandas | NumPy | Apache Beam
+  </text>
+
+  <!-- GCP Cloud Layer -->
+  <rect x="620" y="80" width="280" height="680" fill="url(#cloudGrad)" stroke="#fbbc04" stroke-width="2" rx="10"/>
+  <text x="760" y="105" text-anchor="middle" fill="#f9ab00" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+    GCP CLOUD ANALYTICS
+  </text>
+
+  <!-- Vertex AI -->
+  <rect x="640" y="130" width="240" height="80" fill="#fff3cd" stroke="#fbbc04" stroke-width="1" rx="5"/>
+  <text x="760" y="150" text-anchor="middle" fill="#f9ab00" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    Vertex AI Platform
+  </text>
+  <text x="760" y="165" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    ML Model Training & Deployment
+  </text>
+  <text x="760" y="180" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Pump Efficiency Optimization
+  </text>
+  <text x="760" y="195" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    DRA Injection Rate Modeling
+  </text>
+
+  <!-- Gemini Models -->
+  <rect x="640" y="230" width="240" height="60" fill="#fff3cd" stroke="#fbbc04" stroke-width="1" rx="5"/>
+  <text x="760" y="250" text-anchor="middle" fill="#f9ab00" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    Gemini AI Models
+  </text>
+  <text x="760" y="265" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Advanced Pattern Recognition
+  </text>
+  <text x="760" y="280" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Anomaly Detection
+  </text>
+
+  <!-- Optimization Engine -->
+  <rect x="640" y="310" width="240" height="100" fill="#fff3cd" stroke="#fbbc04" stroke-width="1" rx="5"/>
+  <text x="760" y="330" text-anchor="middle" fill="#f9ab00" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    Semi-Realtime Optimization Engine
+  </text>
+  <text x="760" y="345" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    7-Day Forward Planning</text>
+  <text x="760" y="360" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Cost Minimization Algorithms
+  </text>
+  <text x="760" y="375" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    DRA Quality Constraint Enforcement
+  </text>
+  <text x="760" y="390" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Pump Scheduling & Load Balancing
+  </text>
+
+  <!-- BigQuery -->
+  <rect x="640" y="430" width="240" height="60" fill="#fff3cd" stroke="#fbbc04" stroke-width="1" rx="5"/>
+  <text x="760" y="450" text-anchor="middle" fill="#f9ab00" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    BigQuery Data Warehouse
+  </text>
+  <text x="760" y="465" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Time-series Analytics
+  </text>
+  <text x="760" y="480" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Historical Trend Analysis
+  </text>
+
+  <!-- Monitoring & Alerting -->
+  <rect x="640" y="510" width="240" height="80" fill="#fff3cd" stroke="#fbbc04" stroke-width="1" rx="5"/>
+  <text x="760" y="530" text-anchor="middle" fill="#f9ab00" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    Monitoring & Alerting
+  </text>
+  <text x="760" y="545" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Cloud Operations Suite
+  </text>
+  <text x="760" y="560" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Performance Dashboards
+  </text>
+  <text x="760" y="575" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Quality Threshold Alerts
+  </text>
+
+  <!-- API Gateway -->
+  <rect x="640" y="610" width="240" height="50" fill="#333" stroke="#666" stroke-width="1" rx="3"/>
+  <text x="760" y="630" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="11" font-weight="bold">
+    Cloud Functions API Gateway
+  </text>
+  <text x="760" y="645" text-anchor="middle" fill="#ccc" font-family="Arial, sans-serif" font-size="9">
+    REST APIs | Pub/Sub Integration
+  </text>
+
+  <!-- User Interface Layer -->
+  <rect x="920" y="80" width="260" height="680" fill="#f8f9fa" stroke="#9aa0a6" stroke-width="2" rx="10"/>
+  <text x="1050" y="105" text-anchor="middle" fill="#5f6368" font-family="Arial, sans-serif" font-size="14" font-weight="bold">
+    USER INTERFACE LAYER
+  </text>
+
+  <!-- Operations Dashboard -->
+  <rect x="940" y="130" width="220" height="100" fill="#e8f0fe" stroke="#4285f4" stroke-width="1" rx="5"/>
+  <text x="1050" y="150" text-anchor="middle" fill="#1a73e8" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    Operations Dashboard
+  </text>
+  <text x="1050" y="165" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Real-time System Status
+  </text>
+  <text x="1050" y="180" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Energy Cost Monitoring
+  </text>
+  <text x="1050" y="195" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    DRA Quality Metrics
+  </text>
+  <text x="1050" y="210" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Pump Performance Analytics
+  </text>
+
+  <!-- Optimization Planning -->
+  <rect x="940" y="250" width="220" height="80" fill="#e8f0fe" stroke="#4285f4" stroke-width="1" rx="5"/>
+  <text x="1050" y="270" text-anchor="middle" fill="#1a73e8" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    7-Day Optimization Planning
+  </text>
+  <text x="1050" y="285" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Recommended Injection Schedules
+  </text>
+  <text x="1050" y="300" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Cost Projection & Savings
+  </text>
+  <text x="1050" y="315" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    What-If Scenario Analysis
+  </text>
+
+  <!-- Historical Analytics -->
+  <rect x="940" y="350" width="220" height="80" fill="#e8f0fe" stroke="#4285f4" stroke-width="1" rx="5"/>
+  <text x="1050" y="370" text-anchor="middle" fill="#1a73e8" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    Historical Analytics
+  </text>
+  <text x="1050" y="385" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    8-Year Trend Analysis
+  </text>
+  <text x="1050" y="400" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Performance Benchmarking
+  </text>
+  <text x="1050" y="415" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Covariate Impact Assessment
+  </text>
+
+  <!-- Alert Management -->
+  <rect x="940" y="450" width="220" height="60" fill="#fce8e6" stroke="#ea4335" stroke-width="1" rx="5"/>
+  <text x="1050" y="470" text-anchor="middle" fill="#d93025" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    Alert Management
+  </text>
+  <text x="1050" y="485" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Quality Threshold Violations
+  </text>
+  <text x="1050" y="500" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Equipment Maintenance Alerts
+  </text>
+
+  <!-- Phase 2 Preview -->
+  <rect x="940" y="530" width="220" height="80" fill="#e8eaed" stroke="#9aa0a6" stroke-width="1" stroke-dasharray="5,5" rx="5"/>
+  <text x="1050" y="550" text-anchor="middle" fill="#5f6368" font-family="Arial, sans-serif" font-size="12" font-weight="bold">
+    Phase 2: Bidirectional Control
+  </text>
+  <text x="1050" y="565" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Automated Pump Control
+  </text>
+  <text x="1050" y="580" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Real-time Injection Adjustments
+  </text>
+  <text x="1050" y="595" text-anchor="middle" fill="#666" font-family="Arial, sans-serif" font-size="9">
+    Closed-loop Optimization
+  </text>
+
+  <!-- Mobile App -->
+  <rect x="940" y="630" width="220" height="50" fill="#34a853" stroke="#137333" stroke-width="1" rx="5"/>
+  <text x="1050" y="650" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="11" font-weight="bold">
+    Mobile Operator App
+  </text>
+  <text x="1050" y="665" text-anchor="middle" fill="#e8f5e8" font-family="Arial, sans-serif" font-size="9">
+    Field Operations Support
+  </text>
+
+  <!-- Data Flow Arrows -->
+  <!-- Physical to Data Processing -->
+  <path d="M 300 400 L 320 400" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Data Processing to Cloud -->
+  <path d="M 600 400 L 620 400" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Cloud to UI -->
+  <path d="M 900 400 L 920 400" stroke="#666" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- Bottom Legend -->
+  <rect x="20" y="770" width="1160" height="25" fill="#f1f3f4" stroke="#dadce0" stroke-width="1" rx="5"/>
+  <text x="600" y="785" text-anchor="middle" fill="#5f6368" font-family="Arial, sans-serif" font-size="11">
+    Atlanta Pilot → Semi-Realtime Optimization → 7-Day Planning → Phase 2: Bidirectional Control → Full Pipeline Digital Twin
+  </text>
+</svg>
